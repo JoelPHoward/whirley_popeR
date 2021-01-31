@@ -1,0 +1,67 @@
+Status,External Temperature,Internal Temperature
+1,0,0.87
+"1,function (x) 
+UseMethod(\"t\"),100,0,0.87,"
+1,0,0.81
+"1,function (x) 
+UseMethod(\"t\"),100,0,0.81,"
+1,0,0.75
+"1,function (x) 
+UseMethod(\"t\"),100,0,0.75,"
+1,0,0.68
+"1,function (x) 
+UseMethod(\"t\"),100,0,0.68,"
+1,0,0.61
+"1,function (x) 
+UseMethod(\"t\"),100,0,0.61,"
+1,0,0.52
+"1,function (x) 
+UseMethod(\"t\"),100,0,0.52,"
+1,0,0.44
+"1,function (x) 
+UseMethod(\"t\"),100,0,0.44,"
+1,0,0.34
+"1,function (x) 
+UseMethod(\"t\"),100,0,0.34,"
+1,0,0.25
+"1,function (x) 
+UseMethod(\"t\"),100,0,0.25,"
+1,0,0.15
+"1,function (x) 
+UseMethod(\"t\"),100,0,0.15,"
+1,0,0.05
+"1,function (x) 
+UseMethod(\"t\"),100,0,0.05,"
+1,0,-0.05
+"1,function (x) 
+UseMethod(\"t\"),100,0,-0.05,"
+1,0,-0.15
+"1,function (x) 
+UseMethod(\"t\"),100,0,-0.15,"
+1,0,-0.25
+"1,function (x) 
+UseMethod(\"t\"),100,0,-0.25,"
+1,0,-0.34
+"1,function (x) 
+UseMethod(\"t\"),100,0,-0.34,"
+1,0,-0.43
+"1,function (x) 
+UseMethod(\"t\"),100,0,-0.43,First Crack"
+1,0,-0.52
+"1,function (x) 
+UseMethod(\"t\"),100,0,-0.52,"
+1,0,-0.6
+"1,function (x) 
+UseMethod(\"t\"),100,0,-0.6,"
+1,0,-0.68
+"1,function (x) 
+UseMethod(\"t\"),100,0,-0.68,"
+1,0,-0.75
+"1,function (x) 
+UseMethod(\"t\"),100,0,-0.75,"
+1,0,-0.81
+"1,function (x) 
+UseMethod(\"t\"),100,0,-0.81,"
+1,0,-0.87
+"1,function (x) 
+UseMethod(\"t\"),100,0,-0.87,"
