@@ -83,7 +83,7 @@ server <- function(input, output, session){
         rv$obs <- input$obs
         plotlyProxy("plot", session) %>% 
             plotlyProxyInvoke("addTraces", 
-                              list(x=c(t,t), y=c(0,400), 
+                              list(x=c(t,t), y=c(0,205), 
                                    type='scatter', 
                                    mode='lines',
                                    name = input$obs,

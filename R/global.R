@@ -43,4 +43,4 @@ names(first_dot) <- var_names
 
 wd <- "~/"
 
-runApp("~/repos/whiRleypoPy/app/app")
+runApp("~/repos/whirley_popeR//app/app")

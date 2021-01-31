@@ -12,11 +12,11 @@ ui <- fluidPage(
                 uiOutput("status")
             )
         ),
-        sliderInput('motor_speed', 'Motor Speed', min = 0, max = 255, value = 100),
+        sliderInput('motor_speed', 'Motor Speed', min = 0, max = 255, value = 0),
         fluidRow(
             column(
                 width = 8,
-                textInput(inputId = 'obs', label = 'Observation', value = 'First Crack')
+                textInput(inputId = 'obs', label = 'Observation', value = 'beans added')
             ),
             column(
                 width = 1,
