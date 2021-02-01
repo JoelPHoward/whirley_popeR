@@ -2,7 +2,7 @@
 
 ##### WhirleypopeR is a repository for automated stovetop coffee roasting. This includes a web application to monitor and log roasts:
 
-![image](https://github.com/JoelPHoward/whirley_popeR/tree/master/www/shiny_app.png)
+![image](www/shiny_app.png)
 
 ##### From the app interface, you can:
 *   Monitor temperature profiles
