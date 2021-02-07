@@ -1,5 +1,4 @@
 ui <- fluidPage(
-    tags$style(mycss),
     theme = shinytheme("slate"),
     sidebarPanel(
         fluidRow(
