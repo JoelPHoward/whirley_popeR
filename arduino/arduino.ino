@@ -11,7 +11,7 @@ Adafruit_MAX31855 thermocouple(MAXCLK, MAXCS, MAXDO);
 
 // initialize the motor
 AF_DCMotor motor(2);
-
+int speed = 0;
 void setup() 
 {
   Serial.begin(9600);
@@ -27,7 +27,7 @@ void setup()
   Serial.println("DONE.");
   
   //Set initial speed of the motor & stop
-  motor.setSpeed(200);
+  motor.setSpeed(speed);
   motor.run(RELEASE);
 }
 
@@ -35,10 +35,18 @@ void loop()
 {
   motor.run(FORWARD);
 
+  if (Serial.available() > 0) {
+    // read the incoming byte:
+    speed = Serial.parseInt();
+  }
+  if (speed >= 0 && speed <= 255){
+    motor.setSpeed(speed);
+  }
+
   double ext_temp = thermocouple.readInternal();
   double int_temp = thermocouple.readCelsius(); //thermocouple.readFahrenheit()
 
-  if (isnan(c)) {
+  if (isnan(int_temp)) {
     Serial.print(0); // Something wrong with thermocouple!
     Serial.print(",");
     Serial.print(-1);
