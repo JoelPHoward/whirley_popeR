@@ -5,6 +5,8 @@ library(shinyBS)
 library(shinythemes)
 library(wesanderson)
 
+sourceCpp("~/repos/whirley_popeR/serialPortWrite.cpp")
+my_palette <- c(wes_palettes$Zissou1[2], wes_palettes$GrandBudapest1[2], wes_palettes$Zissou1[-2], wes_palettes$GrandBudapest1[-2])
 sep_fun <- function(x) {
     x <- sub("\r\n$", "", x)
     return(as.numeric(strsplit(x, ",")[[1]]))
@@ -18,7 +20,8 @@ inline_widget <- function(x, width = "100px") {
     shiny::div(style = glue::glue("display: inline-block;vertical-align:top; width: {width};"), x)
 }
 
-con <- ar_init("/dev/cu.usbserial-01750C70", baud = 9600)
+con_path <- "/dev/cu.usbserial-01750C70"
+con <- ar_init(con_path, baud = 9600)
 
 ar_flush_hard(con, 0.05)
 
@@ -43,4 +46,4 @@ names(first_dot) <- var_names
 
 wd <- "~/"
 
-runApp("~/repos/whirley_popeR//app/app")
+runApp("~/repos/whirley_popeR/R/app")
