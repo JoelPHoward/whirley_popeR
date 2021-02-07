@@ -13,4 +13,6 @@
 
 *   Log the data in a csv file for future reference
 
+##### To communicate with the arduino, WhirelypopeR uses functions provided by the [arduinor package](https://github.com/r-arduino/arduinor).
+
 ##### Hardware details to come...
